@@ -314,3 +314,7 @@ include vendor/lineage/config/version.mk
 # Enable Material Design 3 Expressive
 PRODUCT_PRODUCT_PROPERTIES += \
     is_expressive_design_enabled=true
+
+# Fonts
+include vendor/lineage/config/fonts.mk
+
