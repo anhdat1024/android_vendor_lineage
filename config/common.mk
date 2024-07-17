@@ -254,6 +254,7 @@ endif
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     CarSystemUI \
+    SoulAOSPLauncherRelease \
     SystemUI
 
 PRODUCT_PRODUCT_PROPERTIES += \
