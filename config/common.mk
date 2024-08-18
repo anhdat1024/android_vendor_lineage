@@ -7,6 +7,8 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 # GMS
 $(call inherit-product, vendor/gms/products/gms.mk)
 
+DONT_DEXPREOPT_PREBUILTS := true
+
 PRODUCT_BRAND ?= SoulAOSP
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
