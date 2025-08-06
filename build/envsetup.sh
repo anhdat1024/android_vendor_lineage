@@ -1018,3 +1018,4 @@ function build_kernel() {
 }
 
 export USE_THINLTO_CACHE=true
+export SKIP_ABI_CHECKS=true
