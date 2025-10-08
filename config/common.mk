@@ -151,8 +151,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
 
-#  Bootanimation
-include vendor/lineage/config/bootanimation.mk
+
+# Bootanimation
+ifeq ($(strip $(TARGET_SCREEN_WIDTH)),)
+    $(warning "TARGET_SCREEN_WIDTH is undefined, assuming 1080p")
+else
+    $(call soong_config_set,vendor_custom,bootanimation_res,$(TARGET_SCREEN_WIDTH))
+endif
+
+PRODUCT_PACKAGES += \
+    bootanimation_pixel
 
 # Config
 PRODUCT_PACKAGES += \
