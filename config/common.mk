@@ -134,6 +134,9 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 # Reduce system server verbosity
 PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
 
+# Do not include other java mini debug info
+PRODUCT_OTHER_JAVA_DEBUG_INFO := false
+
 # Lineage interfaces
 PRODUCT_PACKAGES += \
     framework_compatibility_matrix.lineage.xml
