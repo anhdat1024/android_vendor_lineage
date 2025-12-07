@@ -28,6 +28,8 @@ import urllib.request
 
 from xml.etree import ElementTree
 
+exit()
+
 dryrun = os.getenv('ROOMSERVICE_DRYRUN') == "true"
 if dryrun:
     print("Dry run roomservice, no change will be made.")
