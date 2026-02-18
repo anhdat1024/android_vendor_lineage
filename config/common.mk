@@ -7,7 +7,7 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 # GMS
 $(call inherit-product, vendor/gms/products/gms.mk)
 
-PRODUCT_BRAND ?= LineageOS
+PRODUCT_BRAND ?= SoulAOSP
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PRODUCT_PROPERTIES += \
